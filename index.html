@@ -6,6 +6,28 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    #projects {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #projects td, #projects th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #projects tr:nth-child(even){background-color: #f2f2f2;}
+
+    #projects tr:hover {background-color: #ddd;}
+
+    #projects th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: teal;
+        color: white;
+    }
 </style>
     <header class="w3-container w3-teal w3-center w3-margin-top">
         <h1>Matt Kline's Portfolio</h1><br>
@@ -57,18 +79,63 @@
                     </p>
                     <div>
                         <h3>List of Projects Selected for Final Portfolio</h3>
-                        <ul>
-                            <li>DSC680 Project1 - Credit Card Fraud</li>
-                            <li>DSC680 Project2 - AI chat bot</li>
-                            <li>DSC680 Project3 - Undecided</li>
-                            <li>Zork</li>
-                            <li>Battleship</li>
-                            <li>Pong</li>
-                            <li>GBA game</li>
-                            <li>Racko</li>
-                            <li>Wine</li>
-                            <li>Internship website</li>
-                        </ul>
+                        <table id="projects" >
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Desciption</th>
+                                <th>Link</th>
+                            </tr>
+                            <tr>
+                                <td>DSC680 Project1 - Credit Card Fraud</td>
+                                <td>Binary classifer to predict Credit Card Fraud. Coded in python jupyter notebook.</td>
+                                <td><a href="https://github.com/mkline3/dsc680/tree/main/Project1"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>DSC680 Project2 - AI Chat Box</td>
+                                <td>The goal of this project will be to build out an AI chat box.</td>
+                                <td><a href="https://github.com/mkline3/dsc680/"><i class="fa fa-eye-slash w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>DSC680 Project3 - Likely Image based</td>
+                                <td>Undecided Project</td>
+                                <td><a href="https://github.com/mkline3/dsc680/"><i class="fa fa-eye-slash w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Zork</td>
+                                <td>Text based game based off of the orignal game Zork. Developed in Java. Goal of learning how to use Entity classes and work in a group.</td>
+                                <td><a href="https://github.com/Jordan523/ZorkTeamSilver3B"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Battleship</td>
+                                <td>Text based game to build battleship board and accuratley try to beat an opponents board. Developed in Java.</td>
+                                <td><a href="https://github.com/mkline3/CPSC220/tree/master/battleship"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Pong</td>
+                                <td>Simple visual game using pixels to recreate the Pong game against an AI. Developed in C.</td>
+                                <td><a href="https://github.com/mkline3/CPSC305/tree/master/pong"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>GBA Game</td>
+                                <td>A recreation of a gameboy game where the backround was a visual wrap. Need a gameboy emulator in order to run. Developed in C.</td>
+                                <td><a href="https://github.com/mkline3/CPSC305/tree/master/GBA%20game"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Racko</td>
+                                <td>Text based version of Racko game. Developed in C++. Goal of learning how to use Linked lists. </td>
+                                <td><a href="https://github.com/mkline3/CPSC340/tree/master/Racko"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Wine Classifer</td>
+                                <td>First ever classifer I made. Goal was to accurately determine wine quality based off of preexisting elements. Classifier built for bother Red and White wine.</td>
+                                <td><a href=""><i class="fa fa-eye-slash w3-hover-opacity"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Internship Website</td>
+                                <td>A website to create internship postings advertised to UMW students. The goal of this project was to learn the Engineering process working with a client to build out a project they wanted. Developed in JavaScript, NodeJS is needed to run this app</td>
+                                <td><a href="https://github.com/mkline3/InternshipWebsite"><i class="fa fa-eye w3-hover-opacity"></i></a></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
