@@ -28,9 +28,37 @@
         background-color: teal;
         color: white;
     }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+    }
+    li {
+        display: inline;
+        float:left;
+    }
+    #nav1,#nav2,#nav3,#nav a {
+        display: block;
+        padding: 15px;
+    }
+    .active {
+        background-color: teal;
+    }
+    li a:hover {
+        background-color: teal;
+    }
+    .norm {
+        display: block;
+        padding:15px;
+    }
 </style>
     <header class="w3-container w3-teal w3-center w3-margin-top">
-        <h1>Matt Kline's Portfolio</h1><br>
+        <ul class="horizonal">
+            <li class="norm">Portfolio:</li>
+            <li><a class = "active" id="nav1" href="index.html">Home</a></li>
+            <li style="float:right"><a id="nav3" href="contact.html">Contact Me</a></li>
+        </ul>
     </header>
     <body class="w3-light-grey">
         <!-- Page Container -->
@@ -40,7 +68,7 @@
             <div class="w3-row-padding">
     
                 <!-- Left Column -->
-                <div class="w3-third">
+                <div class="w3-third" id="leftC">
                     <div class="w3-white w3-text-grey w3-card-4">
                         <div class="w3-display-container">
                           <img src="matt.jpg" style="width:100%" alt="Avatar"> 
@@ -65,6 +93,12 @@
                               <div class="w3-center w3-text-white">100%</div>
                             </div>
                           </div>
+                          <div><p>
+                            My name is Matt and I am currently a Systems/Software Engineer based out of Virginia.
+                            I am currently completing my Masters Degree in Data Science, where I hope to branch out to do more with AI.
+                            I graduated in 2019 with my Bachelors in Computer Science and a Minor of Data Science from the University of Mary Washington.
+                            While at UMW I was on the Men's Rugby team which won the D1AA National Championship in the 2017/2018 Season.
+                          </p></div>
                         </div>
                         <br><br><br>
                     </div>
